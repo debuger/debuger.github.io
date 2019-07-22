@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+<h1>{{ page.title }}</h1>
+
+<p class="view">Старался {{ page.author | default: site.author | default: site.github.owner_name }}</p>
+
+{{content}}
+
+{% if page.sources %}
+  <div class="sources">
+  <h5>Источники:</h5>
+  {% for source in page.sources %}
+  	<small class=""><a href="{{ source" }}">{{ source }}</a></small>
+  {% endfor %}
+  </div>
+{% endif %}
+
+{% if page.tags %}
+  <div class="tags">
+    <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+  </div>
+{% endif %}
