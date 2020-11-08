@@ -4,3 +4,7 @@ https://jekyllthemes.io/
 https://habr.com/ru/post/336266/
 https://pages.github.com/
 https://github.com/mojombo/mojombo.github.io
+https://github.com/jgthms/html-reference
+https://jekyllrb.com/showcase/
+
+
