@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<small>Опубликовано: {{ page.date | date: "%-d %B %Y" }}</small>
+<small class="post-date" style="display: block;">Опубликовано: {{ page.date | date: "%-d %B %Y" }}</small>
 {% if page.updated %}
-<small>Последние изменения: {{ page.updated | date: "%-d %B %Y" }}</small>
+<small class="post-date" style="display: block;"> Обновлено: {{ page.updated | date: "%-d %B %Y" }}</small>
 {% endif %}
 <h1>{{ page.title }}</h1>
 
