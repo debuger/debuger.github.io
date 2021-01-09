@@ -12,7 +12,7 @@ sources:
 Большинство устройств поддерживающих внешние накопители используют FAT32 в качестве ФС. Для корректного использования USB flash в embedded устройствах необходимо создать старый добрый DOS раздел безо всяких GPT и primary fat32 раздела:
 
 ```
-> /fdisk/sdx
+> fdisk /dev/sdx
 ```
 
 * o (create a new empty DOS partition table) =>
@@ -21,7 +21,7 @@ sources:
 * w (write table to disk and exit)
 
 ```
-> mkfs.vfat -F 32 /dev/sdxN
+> mkfs.vfat -F 32 /dev/sdx1
 ```
 
 И вуаля - можно использовать
