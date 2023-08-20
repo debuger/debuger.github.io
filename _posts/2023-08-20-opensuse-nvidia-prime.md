@@ -1,3 +1,4 @@
+---
 title: 'Использование NVIDIA Prime в opensuse'
 tags: 
     - opensuse
