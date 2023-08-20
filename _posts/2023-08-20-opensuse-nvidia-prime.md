@@ -1,5 +1,5 @@
 ---
-title: 'Использование NVIDIA Prime в opensuse'
+title: Использование NVIDIA Prime в opensuse
 tags: 
     - opensuse
     - nvidia prime
