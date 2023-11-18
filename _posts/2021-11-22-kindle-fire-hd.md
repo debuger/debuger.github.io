@@ -8,6 +8,7 @@ sources:
     - https://4pda.ru/forum/index.php?showtopic=973800&st=900#entry102738225
     - https://www.androidpolice.com/2020/12/25/install-play-store-amazon-fire-tablet/
     - https://www.androidpolice.com/2020/07/23/how-to-make-your-amazon-fire-tablet-feel-more-like-stock-android/
+updated: 18.11.2023T22:00:00
 ---
 
 ### Необходимо
@@ -92,4 +93,10 @@ sources:
 ./adb shell pm disable-user --user 0 com.amazon.kindle.otter.oobe.forced.ota && \
 ./adb shell pm disable-user --user 0 com.amazon.device.software.ota && \
 ./adb shell pm disable-user --user 0 com.amazon.device.software.ota.override
+```
+
+### Добавляем частичную русификацию
+
+```
+./adb shell am start -a android.settings.LOCALE_SETTINGS
 ```
