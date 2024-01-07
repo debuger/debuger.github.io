@@ -71,5 +71,5 @@ wg genkey | tee /etc/wireguard/client1private.key | wg pubkey > /etc/wireguard/c
 * отдаем кленту приватный ключ
 * добавляем клиента в конфигурацию сервера
 ```
-wg set wg0 peer <content of /etc/wireguard/client1public.key> allowed-ips 10.8.0.x/32, , fd26:c442:8363::A:8:0:x/128
+wg set wg0 peer <content of /etc/wireguard/client1public.key> allowed-ips 10.8.0.x/32, fd26:c442:8363::A:8:0:x/128
 ```
