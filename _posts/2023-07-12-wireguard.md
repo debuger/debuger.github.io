@@ -9,6 +9,7 @@ sources:
     - https://www.wireguard.com/install/
     - https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-20-04
     - https://gist.github.com/chrisswanda/88ade75fc463dcf964c6411d1e9b20f4
+updated: 07.01.2024T23:00:00
 ---
 
 ### Настройка сервера
@@ -70,5 +71,5 @@ wg genkey | tee /etc/wireguard/client1private.key | wg pubkey > /etc/wireguard/c
 * отдаем кленту приватный ключ
 * добавляем клиента в конфигурацию сервера
 ```
-wg set wg0 peer <content of /etc/wireguard/client1public.key> allowed-ips 10.0.0.x/32
+wg set wg0 peer <content of /etc/wireguard/client1public.key> allowed-ips 10.8.0.x/32, , fd26:c442:8363::A:8:0:x/128
 ```
